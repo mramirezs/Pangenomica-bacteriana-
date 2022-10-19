@@ -49,3 +49,18 @@ Tambien podríamos ejecutar:
 ```
 bp_genbank2gff -stdout -accession NZ_CP043893.1 > NZ_CP043893.1.gff
 ```
+
+## Visualización de resultados
+
+Primero, necesitamos generar un archivo newick a partir de la alineación generada por Roary:
+
+```
+FastTree -nt -gtr core_gene_alignment.aln > my_tree.newick
+```
+
+Luego, podemos hacer el plot de los resultados con el script roary_plots.py:
+
+```
+roary_plots.py my_tree.newick gene_presence_absence.csv
+```
+
