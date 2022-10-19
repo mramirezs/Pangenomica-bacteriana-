@@ -37,3 +37,15 @@ efetch -db nuccore -id NC_004342.2 -format gb -style master > NC_004342.2.gb
 ```
 efetch -db nuccore -id NZ_CP006723.1  -format gb -style master > NZ_CP006723.1.gb
 ```
+
+## Convertir archivos gb a gff 
+
+```
+bp_genbank2gff -stdout -file NZ_CP043893.1.gb > NZ_CP043893.1.gff
+```
+
+Tambien podríamos ejecutar:
+
+```
+bp_genbank2gff -stdout -accession NZ_CP043893.1 > NZ_CP043893.1.gff
+```
