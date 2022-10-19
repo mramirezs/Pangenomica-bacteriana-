@@ -64,3 +64,4 @@ Luego, podemos hacer el plot de los resultados con el script roary_plots.py:
 roary_plots.py my_tree.newick gene_presence_absence.csv
 ```
 
+Obtenemos como resultado 3 gráficos con extensión `png`.
